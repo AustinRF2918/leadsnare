@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="fonts/facebook.svg" rel="stylesheet" type="text/css">
+    <link href="fonts/twitter.svg" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+            <hr class = "rainbow">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Leadsnare</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Sign Up</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Log-in</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header class="headerData">
+        <div class="container theGist">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="intro-text text-center">
+                        <span class="name"><h2 class = "about-header">Share your content, and get paid with a Follow.</h2></span>
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <span class="skills"><h4 class = "about-subheader">Leadsnare let's your visitors exchange a social share for access to your content. All through a link.</h4></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <hr class = "button-divider-top">
+                <div class = "col-lg-4 col-lg-offset-4 text-center">
+                    <button class="btn btn-primary text-center create-link">Create A Link</button>
+                <hr class = "button-divider-bottom">
+                    <p class = "create-link-sub">(It's free)</p>
+                </div>
+		<div class = "col-lg-12 text-center">
+			<iframe src="https://player.vimeo.com/video/63811188" 				width="640" height="360" frameborder="0" 				webkitallowfullscreen mozallowfullscreen 				allowfullscreen></iframe>
+			<p><a href="https://vimeo.com/63811188">Mr. Scruff - 				&#039;Be The Music&#039; (Official Video)</a> from <a 				href="https://vimeo.com/ninjatune">Ninja Tune</a> on 				<a href="https://vimeo.com">Vimeo</a>.</p>
+		</div>
+            </div>
+        </div>
+    </header>
+    <div class = "container">
+        <section class = "actionData">
+            <div class="row">
+                <div class = col-md-12>
+                    <div class="well">
+                        <p class = "text-center link-in-action-text">Want to see a link in action? <span class="view-link">View a live demo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class = "rainbow">
+    <!-- About Section -->
+    <section class="aboutData" id="about">
+        <div class="container">
+            <div class = "theInfo">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="faq-text">Frequently Asked Questions (FAQs)</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+                <hr class = "about-divider-header">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <h3 class="service-text">How can I attach my link?</h3>
+                    <p class="service-subtext">Lorem ipsum dollar sit armet, consiquenta adplacing elidsupi do elusimod tempor incudeti ut labore et doloree insignia aliqua. Ut enim ad manim vaenica.</p>
+                </div>
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="service-text">How do I create a "Snare"?</h3>
+                    <p class="service-subtext">Lorem ipsum dollar sit armet, consiquenta adplacing elidsupi do elusimod tempor incudeti ut labore et doloree insignia aliqua. Ut enim ad manim vaenica.</p>
+                </div>
+                <div class="col-lg-1">
+                </div>
+            </div>
+                <hr class = "about-divider">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <h3 class="service-text">How many links can I create?</h3>
+                    <p class="service-subtext">Lorem ipsum dollar sit armet, consiquenta adplacing elidsupi do elusimod tempor incudeti ut labore et doloree insignia aliqua. Ut enim ad manim vaenica.</p>
+                </div>
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="service-text">What is this service used for?</h3>
+                    <p class="service-subtext">Lorem ipsum dollar sit armet, consiquenta adplacing elidsupi do elusimod tempor incudeti ut labore et doloree insignia aliqua. Ut enim ad manim vaenica.</p>
+                </div>
+                <div class="col-lg-1">
+            </div>
+            </div>
+
+        </div>
+    </section>
+                <hr class = "button-divider-top">
+
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Questions or concerns? Email us directly at <span class="email">team@leadsnare.com</span> and we'll get right back to you in 24 hours.</p>
+                        <p>&copy; Copyright Leadsnare, 2016<p>
+                        <p><img class = "footer-icon"src="fonts/facebook.svg"><img class = "footer-icon"src="fonts/twitter.svg"><p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+</html>

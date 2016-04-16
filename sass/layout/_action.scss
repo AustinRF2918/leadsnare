@@ -1,0 +1,36 @@
+.actionData
+{
+    .link-in-action-text
+    {
+        color: $color-link-in-action;
+    }
+
+    .view-link
+    {
+        color: $color-link;
+    }
+
+    .faq-text 
+    {
+        color: $color-faq-text;
+    }
+
+    .service-text
+    {
+         color: $color-service;
+    }
+
+    .service-subtext 
+    {
+        color: $color-service-subtext;
+    }
+
+    .well
+    {
+        @include top-generate-mass(2, $hugeOffset : 1, $desktopOffset : 1, 	$tabletOffset : 0, $phoneOffset : 0, $lowHeightOffset : 2.25);
+        border-radius: 0px;
+        background-color: $color-link-in-action, 5%;
+        box-shadow: 5px 5px 5px lighten($color-about-header, 60%);
+
+    }
+}

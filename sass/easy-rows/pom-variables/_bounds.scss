@@ -1,0 +1,42 @@
+//Responsive Design Variables
+//Variable map
+$responsive-lower-variables: (
+    phone: 0px,
+    tablet: 768px,
+    desktop: 992px,
+    huge: 1200px
+);
+
+$responsive-upper-variables: (
+    phone: 767px,
+    tablet: 991px,
+    desktop: 1199px,
+    lowHeight: 600px
+);
+
+//Functions to easily retrieve these "private" data types.
+@function getMediaLowerBound($type)
+{
+    @if map-has-key($responsive-lower-variables, $type)
+    {
+        @return map-get($responsive-lower-variables, $type);
+    }
+    @else 
+    {
+        @error("You called getMediaLowerBound on a type that does not have a lower bound. Variable #{$type}.");
+    }
+}
+
+@function getMediaUpperBound($type)
+{
+    @if map-has-key($responsive-upper-variables, $type)
+    {
+        @return map-get($responsive-upper-variables, $type);
+    }
+    @else 
+    {
+        @error("You called getMediaUpperBound on a type that does not have a upper bound. Variable #{$type}.");
+    }
+}
+
+

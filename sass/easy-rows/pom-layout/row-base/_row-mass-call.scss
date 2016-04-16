@@ -1,0 +1,72 @@
+@mixin row-generate-mass($number, $phone-omit : null, $tablet-omit : null, $desktop-omit : null, $huge-omit : null, $lowHeight-omit : null)
+{
+    @if ($phone-omit == null)
+    {
+        @include row-generate(phone, $number);
+    }
+
+    @if ($tablet-omit == null)
+    {
+        @include row-generate(tablet, $number);
+    }
+
+    @if ($desktop-omit == null)
+    {
+        @include row-generate(desktop, $number);
+    }
+    
+    @if ($huge-omit == null)
+    {
+        @include row-generate(huge, $number);
+    }
+
+    @if ($lowHeight-omit == null)
+    {
+        @include row-generate(lowHeight, $number)
+    }
+}
+
+
+@mixin top-generate-mass($number, $phoneOffset : null, $desktopOffset : null, $tabletOffset : null, $hugeOffset: null, $lowHeightOffset : null)
+{
+     @if ($phoneOffset != null)
+    {
+        @include top-generate(phone, $number - $phoneOffset);
+        @if ($tabletOffset == null)
+        {
+
+            @include top-generate(tablet, $number - $phoneOffset);
+        }
+    }
+
+    @if ($tabletOffset != null)
+    {
+        @include top-generate(tablet, $number - $tabletOffset);
+    }
+
+    @if ($desktopOffset != null)
+    {
+        @include top-generate(desktop, $number - $desktopOffset);
+        @if ($hugeOffset == null)
+        {
+            @include top-generate(huge, $number - $desktopOffset);
+        }
+    }
+
+    @if ($hugeOffset != null)
+    {
+        @include top-generate(huge, $number - $hugeOffset);
+    }
+
+    @if ($lowHeightOffset == null)
+    {
+        @include top-generate(lowHeight, $number - $phoneOffset);
+    }
+
+    @if ($lowHeightOffset != null)
+    {
+        @include top-generate(lowHeight, $number - $lowHeightOffset);
+    }
+
+
+}

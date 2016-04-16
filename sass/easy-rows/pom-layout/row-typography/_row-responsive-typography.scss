@@ -1,0 +1,27 @@
+@mixin typography-generate($type, $size, $relativity, $font-stack : null)
+{
+    @if $type == phone or $type == tablet or $type == desktop or $type == huge or $type == laptop or $type == lowHeight
+    {
+        //relativity just forces you think think about what you are inputting.
+        @if $relativity == px or $relativity == em or $relativity == vw or $relativity == vh
+        {
+            @include breakpoint($type) 
+            {
+                font-size: $size;
+                @if variable-exists(font-stack)
+                {
+                    font-family: $font-stack;
+                }
+            }
+        }
+        @else 
+        {
+            @error("Improper input to typography-generate: requires em or px or vh or vw to be input to $relativity");
+        }
+    }
+    @else 
+    {
+        @error("Improper input to row-generate: phone, tablet, laptop, desktop, or huge as parameters. You entered: #{$type}");
+    }
+}
+

@@ -1,0 +1,13 @@
+@mixin row-background-fixed($pathname)
+{
+    background: url($pathname) no-repeat center center fixed;
+    @include background-size(cover);
+}
+
+
+@mixin row-background($pathname)
+{
+    background: url($pathname) no-repeat center center;
+    @include background-size(cover);
+}
+

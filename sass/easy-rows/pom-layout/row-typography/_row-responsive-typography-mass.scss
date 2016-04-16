@@ -1,0 +1,27 @@
+@mixin typography-generate-mass($font-size, $font-stack, $phone-omit : null, $tablet-omit : null, $desktop-omit : null, $huge-omit : null, $lowHeight-omit: null)
+{
+    @if ($phone-omit == null)
+    {
+        @include typography-generate(phone, $font-size * .6666, px,  $font-stack);
+    }
+
+    @if ($tablet-omit == null)
+    {
+        @include typography-generate(tablet, $font-size * .7777, px,  $font-stack);
+    }
+
+    @if ($desktop-omit == null)
+    {
+        @include typography-generate(desktop, $font-size * .8888, px, $font-stack);
+    }
+
+    @if ($huge-omit == null)
+    {
+        @include typography-generate(huge, $font-size * 1, px, $font-stack);
+    }
+
+    @if ($lowHeight-omit == null)
+    {
+        @include typography-generate(lowHeight, $font-size * .6666, px, $font-stack);
+    }
+}

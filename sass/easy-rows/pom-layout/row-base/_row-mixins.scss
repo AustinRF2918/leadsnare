@@ -1,0 +1,40 @@
+@function get-rowHeight($type)
+{
+    @if contains($media-list, $type)
+    {
+        @return getElementHeight($type);
+    }
+}
+
+
+@mixin row-generate($type, $number)
+{
+    @if contains($media-list, $type)
+    {
+        @include breakpoint($type) 
+        {
+            min-height: get-rowHeight($type) * $number;
+        }
+    }
+    @else 
+    {
+        @error("Improper input to row-generate: phone, tablet, laptop, desktop, or huge as parameters. You entered: #{$type}");
+    }
+}
+
+@mixin top-generate($type, $number)
+{
+    @if contains($media-list, $type)
+    {
+        @include breakpoint($type) 
+        {
+            margin-top: get-rowHeight($type) * $number;
+        }
+    }
+    @else 
+    {
+        @error("Improper input to top-generate: phone, tablet, laptop, desktop, or huge as parameters. You entered: #{$type}");
+    }
+}
+
+

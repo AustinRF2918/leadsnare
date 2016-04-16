@@ -1,0 +1,63 @@
+//Just for desktop here.
+$collection-offset : 2.1;
+
+.header
+{
+    @include row-background-fixed("../img/lake.jpg");
+    @include row-generate(6, phone);
+    @include row-generate(6, tablet);
+    @include row-generate(12, desktop);
+    @include row-generate(12, huge);
+    @include row-generate(6, lowHeight);
+
+    .collection
+    {
+        @include top-generate(3 - $collection-offset, phone);
+        @include top-generate(3 - $collection-offset, tablet);
+        @include top-generate(6 - $collection-offset * 1.7, desktop);
+        @include top-generate(6 - $collection-offset, huge);
+        @include row-generate(3 - $collection-offset, lowHeight);
+    }
+    .col-sm-6
+    {
+        h1 
+        {
+            @include typography-generate(phone, 2 * 26px, vw);
+            @include typography-generate(desktop, 2 * 3em, em);
+            @include typography-generate(huge, 2 * 3em, em);
+            @include typography-generate(lowHeight, 2 * 26px, vw);
+        }
+
+        h2 
+        {
+            @include typography-generate(phone, 26px, vw);
+            @include typography-generate(desktop, 3em, px);
+            @include typography-generate(huge, 3em, em);
+            @include typography-generate(lowHeight, 26px, vw);
+        }
+
+        @include top-generate((3 - 1.5) * 0.05, phone);
+        @include top-generate((3 - 1.5) * 0.05, tablet);
+        @include top-generate((6 - 1.5) * 0.05, desktop);
+        @include top-generate((6 - 1.5) * 0.05, huge);
+        @include top-generate((3 - 1.5) * 0.05, lowHeight);
+    }
+    h1{
+        color: $color-headerText;
+        font-family: $font-titleTitle;
+        font-weight: bold;
+    }
+
+    h2{
+        color: $color-subduedHeaderText;
+        font-family: $font-titleSub;
+        font-weight: bold;
+    }
+
+    &__container--highlight
+    {
+        @include highlight-section($color-petal, transparent, 30px)
+    }
+
+}
+

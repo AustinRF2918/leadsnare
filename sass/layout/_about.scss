@@ -1,0 +1,67 @@
+.aboutData
+{
+    @include row-generate-mass(10);
+
+    .theInfo
+    {
+        @include top-generate-mass(2, $hugeOffset : 1, $desktopOffset : 1, $tabletOffset : 1, $phoneOffset : 1.50, $lowHeightOffset : 2.25);
+        @include row-generate-mass(5);
+    }
+
+    .about-divider
+    {
+        margin: 0px;
+        @include top-generate(phone, 0);
+        @include top-generate(tablet, 0);
+        @include top-generate(desktop, 0);
+        @include top-generate(huge, 1.5);
+        @include top-generate(lowHeight, 0);
+    }
+
+    .about-divider-header
+    {
+        @include top-generate-mass(1.5, $hugeOffset : 1, $desktopOffset : 1, $tabletOffset : 1, $phoneOffset : 1.50, $lowHeightOffset : 2.25);
+    }
+
+    .footer-divider
+    {
+         @include top-generate(phone, 3);
+         @include top-generate(tablet, 3);
+         @include top-generate(desktop, 0);
+         @include top-generate(huge, 0);
+         @include top-generate(lowHeight, 3);
+    }
+
+    @media screen and (max-width: 768px)
+    {
+        .service-text{
+                text-align: center;
+         }
+    }
+
+
+    .link-in-action-text
+    {
+        color: $color-link-in-action;
+    }
+
+    .view-link
+    {
+        color: $color-link;
+    }
+
+    .faq-text 
+    {
+        color: $color-faq-text;
+    }
+
+    .service-text
+    {
+         color: $color-service;
+    }
+
+    .service-subtext 
+    {
+        color: $color-service-subtext;
+    }
+}

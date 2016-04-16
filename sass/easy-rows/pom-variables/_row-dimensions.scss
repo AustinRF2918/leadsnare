@@ -1,0 +1,23 @@
+$elementHeights: (
+    phone: 700px/12,
+    tablet: 850/12,
+    laptop: 950/12,
+    desktop: 100vh/12,
+    huge: 100vh/12,
+    lowHeight: 700px/12
+);
+
+//Function to get sizes.
+@function getElementHeight($type)
+{
+    @if map-has-key($elementHeights, $type)
+    {
+        @return map-get($elementHeights, $type);
+    }
+    @else 
+    {
+        @error("getElementHeight on a key that does not exist. Variable #{$type}");
+    }
+}
+
+
