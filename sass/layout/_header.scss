@@ -17,6 +17,7 @@
 
     .video
     {
+        @include top-generate-mass(2, $hugeOffset : 1, $desktopOffset : 1, 	$tabletOffset : 1, $phoneOffset : 1.50, $lowHeightOffset : 2.25);
         @include row-generate-mass(6);
     }
 

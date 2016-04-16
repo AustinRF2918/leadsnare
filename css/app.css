@@ -107,6 +107,21 @@
   font-size: 160%; }
 @media screen and (max-width: 767px) {
   .headerData .video {
+    margin-top: 29.16667px; } }
+@media screen and (max-width: 991px) {
+  .headerData .video {
+    margin-top: 70.83333; } }
+@media screen and (max-width: 1199px) {
+  .headerData .video {
+    margin-top: 8.33333vh; } }
+@media screen and (min-width: 1200px) {
+  .headerData .video {
+    margin-top: 8.33333vh; } }
+@media screen and (max-width: 600px) {
+  .headerData .video {
+    margin-top: -14.58333px; } }
+@media screen and (max-width: 767px) {
+  .headerData .video {
     min-height: 350px; } }
 @media screen and (max-width: 991px) {
   .headerData .video {
