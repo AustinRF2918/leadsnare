@@ -1,0 +1,46 @@
+@mixin hide-generate-mass($elementName, $phone-hide : null, $tablet-hide : null, $desktop-hide : null, $huge-hide : null, $lowHeight-hide)
+{
+    $media-list: phone, tablet, desktop, huge, lowHeight;
+    .#{$elementName}
+    {
+        @if ($phone-hide != null)
+        {
+            @mixin(phone)
+            {
+                display: none;
+            }
+        }
+
+        @if ($tablet-hide != null)
+        {
+            @mixin(tablet)
+            {
+                display: none;
+            }
+        }
+
+        @if ($desktop-hide != null)
+        {
+            @mixin(desktop)
+            {
+                display: none;
+            }
+        }
+
+        @if ($huge-hide != null)
+        {
+            @mixin(huge)
+            {
+                display: none;
+            }
+        }
+
+        @if ($lowHeight-hide != null)
+        {
+            @mixin(lowHeight)
+            {
+                display: none;
+            }
+        }
+    }
+}
