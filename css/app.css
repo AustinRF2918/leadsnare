@@ -12,13 +12,19 @@
   background: #353535;
   color: #f1f1f1;
   border-color: #353535;
-  width: 66.6666666%;
+  width: 50%;
+  height: 60px;
   border-radius: 0px; }
+
+.title-header {
+  font-size: 12px; }
+.title-subheader {
+  font-size: 12px; }
 
 .rainbow {
   margin: 0px;
   position: relative;
-  height: .25em;
+  height: 5em;
   border: 0;
   overflow: hidden; }
 
@@ -28,63 +34,54 @@
   position: absolute;
   top: 0px;
   left: 0;
-  height: .25em;
+  height: 0.55em;
   width: 14.4vw;
   background: #e65f53;
-  box-shadow: 14.4vw 0 0 0 #f0c16e, 28.8vw 0 0 0 #f0d36d, 43.2vw 0 0 0 #6bd894, 57.6vw 0 0 0 #4a77a3, 72vw 0 0 0 #6d428c, 86.4vw 0 0 0 violet; }
+  box-shadow: 14.4vw 0 0 0 #89b1cc, 28.8vw 0 0 0 #3b7399, 43.2vw 0 0 0 #c5fff8, 57.6vw 0 0 0 #ff9985, 72vw 0 0 0 #cc8a89, 86.4vw 0 0 0 #CCA5AB; }
 
-.rainbow-middle {
-  margin: 0px;
-  position: relative;
-  top: 250px;
-  width: 100vw;
-  left: -10vw;
-  z-index: -5;
-  height: .25em;
-  border: 0;
-  overflow: hidden; }
+.invisible {
+  color: black; }
 
-.rainbow-middle:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  height: .25em;
-  width: 14.4vw;
-  background: #e65f53;
-  box-shadow: 14.4vw 0 0 0 #f0c16e, 28.8vw 0 0 0 #f0d36d, 43.2vw 0 0 0 #6bd894, 57.6vw 0 0 0 #4a77a3, 72vw 0 0 0 #6d428c, 86.4vw 0 0 0 violet; }
+.jumb {
+  margin: 10px; }
 
+@media screen and (min-width: 975px) {
+  .video {
+    width: 600px;
+    height: 400px; } }
+@media screen and (max-width: 976px) {
+  .video {
+    display: none !important; } }
 @media screen and (max-width: 767px) {
   .headerData {
-    min-height: 466.66667px; } }
+    min-height: 350px; } }
 @media screen and (max-width: 991px) {
   .headerData {
-    min-height: 566.66667; } }
+    min-height: 425; } }
 @media screen and (max-width: 1199px) {
   .headerData {
-    min-height: 66.66667vh; } }
+    min-height: 50vh; } }
 @media screen and (min-width: 1200px) {
   .headerData {
-    min-height: 66.66667vh; } }
+    min-height: 50vh; } }
 @media screen and (max-width: 600px) {
   .headerData {
-    min-height: 466.66667px; } }
+    min-height: 350px; } }
 @media screen and (max-width: 767px) {
   .headerData .theGist {
-    margin-top: 87.5px; } }
+    margin-top: 175px; } }
 @media screen and (max-width: 991px) {
   .headerData .theGist {
-    margin-top: 141.66667; } }
+    margin-top: 247.91667; } }
 @media screen and (max-width: 1199px) {
   .headerData .theGist {
-    margin-top: 16.66667vh; } }
+    margin-top: 29.16667vh; } }
 @media screen and (min-width: 1200px) {
   .headerData .theGist {
-    margin-top: 16.66667vh; } }
+    margin-top: 29.16667vh; } }
 @media screen and (max-width: 600px) {
   .headerData .theGist {
-    margin-top: 43.75px; } }
+    margin-top: 131.25px; } }
 @media screen and (max-width: 767px) {
   .headerData .theGist {
     min-height: 291.66667px; } }
@@ -105,42 +102,25 @@
 .headerData .theGist h4 {
   line-height: 30px;
   font-size: 160%; }
-@media screen and (max-width: 767px) {
-  .headerData .video {
-    margin-top: 29.16667px; } }
-@media screen and (max-width: 991px) {
-  .headerData .video {
-    margin-top: 70.83333; } }
-@media screen and (max-width: 1199px) {
-  .headerData .video {
-    margin-top: 8.33333vh; } }
-@media screen and (min-width: 1200px) {
-  .headerData .video {
-    margin-top: 8.33333vh; } }
-@media screen and (max-width: 600px) {
-  .headerData .video {
-    margin-top: -14.58333px; } }
-@media screen and (max-width: 767px) {
-  .headerData .video {
-    min-height: 350px; } }
-@media screen and (max-width: 991px) {
-  .headerData .video {
-    min-height: 425; } }
-@media screen and (max-width: 1199px) {
-  .headerData .video {
-    min-height: 50vh; } }
-@media screen and (min-width: 1200px) {
-  .headerData .video {
-    min-height: 50vh; } }
-@media screen and (max-width: 600px) {
-  .headerData .video {
-    min-height: 350px; } }
 .headerData .about-header {
   color: #353535; }
 .headerData .about-subheader {
   color: #636363; }
 .headerData .create-link-sub {
   color: #636363; }
+
+.about-middle-portion {
+  margin-top: 30px; }
+.about-header {
+  font-size: 3em !important; }
+  @media screen and (max-width: 767px) {
+    .about-header {
+      text-align: left; } }
+  @media screen and (min-width: 768px) {
+    .about-header {
+      text-align: left; } }
+.about-subheader {
+  text-align: left; }
 
 @media screen and (max-width: 767px) {
   .aboutData {
@@ -286,5 +266,67 @@
   @media screen and (max-width: 600px) {
     .actionData .well {
       margin-top: -14.58333px; } }
+
+.linkData {
+  background: #f9fafb; }
+  @media screen and (max-width: 767px) {
+    .linkData {
+      min-height: 233.33333px; } }
+  @media screen and (max-width: 991px) {
+    .linkData {
+      min-height: 283.33333; } }
+  @media screen and (max-width: 1199px) {
+    .linkData {
+      min-height: 33.33333vh; } }
+  @media screen and (min-width: 1200px) {
+    .linkData {
+      min-height: 33.33333vh; } }
+  @media screen and (max-width: 600px) {
+    .linkData {
+      min-height: 233.33333px; } }
+  .linkData p {
+    margin-top: 15px;
+    margin-bottom: 30px; }
+  @media screen and (max-width: 767px) {
+    .linkData .theLink {
+      min-height: 291.66667px; } }
+  @media screen and (max-width: 991px) {
+    .linkData .theLink {
+      min-height: 354.16667; } }
+  @media screen and (max-width: 1199px) {
+    .linkData .theLink {
+      min-height: 41.66667vh; } }
+  @media screen and (min-width: 1200px) {
+    .linkData .theLink {
+      min-height: 41.66667vh; } }
+  @media screen and (max-width: 600px) {
+    .linkData .theLink {
+      min-height: 291.66667px; } }
+  .linkData .theLink h2 {
+    font-size: 200%; }
+    @media screen and (max-width: 767px) {
+      .linkData .theLink h2 {
+        margin-top: 58.33333px; } }
+    @media screen and (max-width: 991px) {
+      .linkData .theLink h2 {
+        margin-top: 106.25; } }
+    @media screen and (max-width: 1199px) {
+      .linkData .theLink h2 {
+        margin-top: 12.5vh; } }
+    @media screen and (min-width: 1200px) {
+      .linkData .theLink h2 {
+        margin-top: 12.5vh; } }
+    @media screen and (max-width: 600px) {
+      .linkData .theLink h2 {
+        margin-top: 14.58333px; } }
+  .linkData .theLink h4 {
+    line-height: 30px;
+    font-size: 160%; }
+  .linkData .about-header {
+    color: #353535; }
+  .linkData .about-subheader {
+    color: #636363; }
+  .linkData .create-link-sub {
+    color: #636363; }
 
 /*# sourceMappingURL=app.css.map */

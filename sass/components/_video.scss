@@ -1,0 +1,20 @@
+@media screen and (min-width: 975px)
+{
+.video
+{
+    width: 600px;
+    height: 400px;
+}
+}
+
+@media screen and (max-width: 976px)
+{
+    .video{
+        display: none !important;
+    }
+
+}
+
+
+
+

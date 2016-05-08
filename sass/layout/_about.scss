@@ -1,3 +1,35 @@
+$generalMargin: 20px;
+.about
+{   
+    &-top-portion
+    {
+    }
+
+    &-middle-portion
+    {
+        margin-top: $generalMargin * 1.5;
+    }
+
+    &-header
+    {
+        font-size: 3em !important;
+        @media screen and (max-width: 767px)
+        {
+            text-align: left;
+        }
+
+        @media screen and (min-width: 768px)
+        {
+            text-align: left;
+        }
+    }
+
+    &-subheader
+    {
+        text-align: left;
+    }
+}
+
 .aboutData
 {
     @include row-generate-mass(10);

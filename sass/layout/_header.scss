@@ -1,10 +1,10 @@
 .headerData
 {
-    @include row-generate-mass(8);
+    @include row-generate-mass(6);
 
     .theGist
     {
-        @include top-generate-mass(3, $hugeOffset : 1, $desktopOffset : 1, 	$tabletOffset : 1, $phoneOffset : 1.50, $lowHeightOffset : 2.25);
+        @include top-generate-mass(4.5, $hugeOffset : 1, $desktopOffset : 1, 	$tabletOffset : 1, $phoneOffset : 1.50, $lowHeightOffset : 2.25);
         @include row-generate-mass(5);
         h2{
             font-size: 200%;
@@ -13,12 +13,6 @@
             line-height: 30px;
             font-size: 160%;
         }
-    }
-
-    .video
-    {
-        @include top-generate-mass(2, $hugeOffset : 1, $desktopOffset : 1, 	$tabletOffset : 1, $phoneOffset : 1.50, $lowHeightOffset : 2.25);
-        @include row-generate-mass(6);
     }
 
 

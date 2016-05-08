@@ -1,0 +1,43 @@
+.linkData
+{
+    background: $color-LeadSnare-grey;
+
+    @include row-generate-mass(4);
+
+    p
+    {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .theLink
+    {
+        @include row-generate-mass(5);
+        h2{
+    @include top-generate-mass(2.5, $hugeOffset : 1, $desktopOffset : 1, 	$tabletOffset : 1, $phoneOffset : 1.50, $lowHeightOffset : 2.25);
+            font-size: 200%;
+        }
+        h4{
+            line-height: 30px;
+            font-size: 160%;
+        }
+    }
+
+
+    .about-header
+    {
+        color: $color-createLink;
+    }
+
+    .about-subheader 
+    {
+        color: $color-subText;
+    }
+    
+    .create-link-sub
+    {
+        color: $color-subText;
+    }
+
+}
+

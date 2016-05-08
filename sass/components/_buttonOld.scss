@@ -1,0 +1,22 @@
+.button-divider-top
+{
+    margin-top: $buttonPadding * 2;
+    margin-bottom: $buttonPadding * 2;
+    padding-top: $buttonPadding / 4;
+}
+
+.button-divider-bottom
+{
+    margin-top: $buttonPadding * .5;
+    margin-bottom: $buttonPadding / 4;
+    padding-top: $buttonPadding / 4;
+}
+
+.btn-primary 
+{
+    background: $color-createLink;
+    color: $color-signUp;
+    border-color: $color-createLink;
+    width: 66.6666666%;
+    border-radius: 0px;
+}
